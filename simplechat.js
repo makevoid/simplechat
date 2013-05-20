@@ -5,9 +5,9 @@ if (Meteor.isClient) {
   var input
 
   var scroll = function(){
-    // document.body
-    var body = document.querySelector("body")
-    body.scrollTop = 9999
+    var top = 99999
+    document.body.scrollTop = top
+    document.documentElement.scrollTop = top
   }
 
   Meteor.startup(function() {
